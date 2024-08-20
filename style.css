@@ -1,0 +1,159 @@
+/* Reset de estilos padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo para o corpo da página */
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo para o título */
+.titulo {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Contêiner principal */
+.main-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 600px; /* Altura fixa para o contêiner */
+}
+
+/* Estilo para o formulário */
+.formulario {
+    position: absolute;
+    top: 110px; /* Ajusta o deslocamento do formulário para baixo */
+    left: 120px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 300px; /* Largura fixa para o formulário */
+}
+
+/* Estilo para os grupos do formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilo para os rótulos do formulário */
+.formulario label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Estilo para os campos de entrada */
+.formulario input[type="text"],
+.formulario input[type="email"] {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilo para o botão de envio */
+.formulario button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+/* Estilo para mensagens de erro */
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Estilo para campos com erro */
+.error {
+    border-color: #e74c3c;
+}
+
+/* Estilo para a seção de contatos */
+.contacts {
+    position: absolute;
+    top: 120px; /* Ajusta o deslocamento da lista de contatos para baixo */
+    right: 350px;
+    width: 300px; /* Largura fixa para a lista de contatos */
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: box-shadow 0.3s;
+}
+
+/* Adiciona fundo branco quando há contatos */
+.contacts:not(.empty) {
+    background-color: #ffffff;
+}
+
+/* Estilo para itens de contatos */
+.contacts .box {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.contacts .box:last-child {
+    border-bottom: none;
+}
+
+/* Estilo para os ícones de editar e excluir */
+.icon {
+    width: 24px;  /* Define a largura da imagem */
+    height: 24px; /* Define a altura da imagem */
+    object-fit: contain; /* Garante que a imagem mantenha a proporção */
+    cursor: pointer; /* Adiciona um cursor de ponteiro para melhorar a interação do usuário */
+    transition: opacity 0.3s; /* Adiciona uma transição suave para a opacidade */
+    margin: 0 5px; /* Espaçamento entre ícones */
+}
+
+.icon:hover {
+    opacity: 0.7; /* Adiciona um efeito de opacidade ao passar o mouse sobre o ícone */
+}
+
+/* Estilo para os botões dentro dos cartões de contato */
+.div_botoes {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px; /* Espaço entre os botões */
+}

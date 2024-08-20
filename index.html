@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contatos</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Lista de Contatos</h1>
+    </header>
+    <main>
+        <div class="container">
+            <section class="form-section">
+                <form id="formulario" class="formulario">
+                    <div class="form-group">
+                        <label for="nameContact">Nome:</label>
+                        <input type="text" id="nameContact" name="nameContact" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Número:</label>
+                        <input type="text" id="number" name="number" placeholder="(xx) xxxxx-xxxx" maxlength="15" required>
+                        <div id="number-error" class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <button type="submit">Cadastrar</button>
+                    <div id="global-error" class="error-message"></div>
+                </form>
+            </section>
+            <section id="contacts" class="contacts"></section>
+        </div>
+        <script src="./script.js"></script>
+    </main>
+</body>
+</html>
